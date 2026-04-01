@@ -26,7 +26,6 @@ public class Question {
     @JoinColumn(name = "category_id")
     private Category category;
 
-    // Constructors
     public Question() {}
 
     public Question(String question, String answer, Category category) {
