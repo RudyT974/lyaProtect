@@ -1,0 +1,35 @@
+.main-container {
+  margin-top: 2rem;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.question-card {
+  margin-bottom: 1rem;
+}
+
+.question-title {
+  font-weight: bold;
+}
+
+.question-answer {
+  color: gray;
+}
+
+.category-title {
+  font-weight: bold;
+}
+
+.category-header {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.no-result {
+  color: gray;
+  margin-bottom: 1rem;
+}
