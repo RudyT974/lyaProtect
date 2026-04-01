@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/questions")
+@RequestMapping(Endpoint.QUESTIONS)
 @CrossOrigin
 public class QuestionController {
 
@@ -17,7 +17,7 @@ public class QuestionController {
         this.service = service;
     }
 
-    @GetMapping("/search")
+    @GetMapping(Endpoint.QUESTIONS_SEARCH)
     public List<QuestionDTO> search(@RequestParam String q) {
         return service.search(q);
     }

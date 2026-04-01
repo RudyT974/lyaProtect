@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/categories")
+@RequestMapping(Endpoint.CATEGORIES)
 @CrossOrigin
 public class CategoryController {
 
@@ -23,7 +23,7 @@ public class CategoryController {
         return service.getAll();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping(Endpoint.CATEGORY_BY_ID)
     public CategoryDTO getOne(@PathVariable Long id) {
         return service.getOne(id);
     }
@@ -33,7 +33,7 @@ public class CategoryController {
         return service.create(dto);
     }
 
-    @PostMapping("/{id}/questions")
+    @PostMapping(Endpoint.CATEGORY_QUESTIONS)
     public QuestionDTO addQuestion(@PathVariable Long id, @RequestBody QuestionDTO dto) {
         return service.addQuestion(id, dto);
     }
